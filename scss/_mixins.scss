@@ -1,0 +1,22 @@
+@mixin theme($way:row) {
+    flex-direction:$way; 
+   }
+@mixin btn($bgColor:white,$fntclr:black) {
+    padding: 10px 1rem;
+    text-align: center;
+    box-shadow: 2px 2px 7px 1px #eeeeed;
+    background: $bgColor;
+    color: $fntclr;
+    width: 35%;
+    min-width: 150px;
+    border-radius: 5px; 
+} 
+@mixin sectionBgColor($clr:green) {
+    background-color:$clr; 
+   }  
+   @mixin background-image($filePath, $bgXpos:0, $bgYpos:0, $bgReapeat:no-repeat, $bgSize:cover) {
+    background-image:$filePath;
+    background-position: $bgXpos $bgYpos;
+    background-repeat: $bgReapeat;
+    background-size: $bgSize;
+}
